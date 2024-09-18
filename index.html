@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Çiçekli Artificial Intelligence Community">
+  <meta name="keywords" content="Cicekli AI, Artificial Intelligence, Yapay Zeka, Çiçekli AI, çiçekli yapay zeka, computer learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cicekliai.org</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <nav class="nav">
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="index.html" class="active"><i class="fa-solid fa-house-chimney"></i>&nbsp;Anasayfa</a></li>
+      <li><a href="hakkimizda.html"><i class="fa-solid fa-address-card"></i>&nbsp;Hakkımızda</a></li>
+      <li><a href="faaliyetler.html"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Faaliyetlerimiz</a></li>
+      <li><a href="takimimiz.html"><i class="fa-solid fa-users"></i>&nbsp;Takımımız</a></li>
+      <li><a href="iletisim.html"><i class="fa-regular fa-envelope"></i>&nbsp;İletişim</a></li>
+    </ul>
+    <ul>
+      <li><a class="logo" href="#" style="font-weight: 400;">cicekli<span style="color: rgb(0, 102, 255);">ai</span></a></li>
+      <li class="hideOnPc"><a href="/en/index.html"><button class="lang"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png" alt="Flag" class="lang-img"></button></a></li>
+      <li class="hideOnMobile"><a href="index.html" class="active"><i class="fa-solid fa-house-chimney"></i>&nbsp;Anasayfa</a></li>
+      <li class="hideOnMobile"><a href="hakkimizda.html"><i class="fa-solid fa-address-card"></i>&nbsp;Hakkımızda</a></li>
+      <li class="hideOnMobile"><a href="faaliyetler.html"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Faaliyetlerimiz</a></li>
+      <li class="hideOnMobile"><a href="takimimiz.html"><i class="fa-solid fa-users"></i>&nbsp;Takımımız</a></li>
+      <li class="hideOnMobile"><a href="iletisim.html"><i class="fa-regular fa-envelope"></i>&nbsp;İletişim</a></li>
+      <li class="hideOnMobile"><a href="/en/index.html"><button class="lang"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png" alt="Flag" class="lang-img"> TUR</button></a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+  
+  <div class="index-duyurular">
+    <p class="id-title">Duyurular</p>
+    <div class="id-cizgi"></div>
+    <div class="id-container">
+      <div class="id", onclick="window.location='https://www.youtube.com/watch?v=EHK2x0rG-7I';">
+        <p class="idd-title"><i class="fa-brands fa-youtube" style="color: red;"></i> | Gün 1 Bölüm 1 - Makine Öğrenmesi Matematiğine Giriş</p>
+        <p class="idd-des">Buraya tıklayarak videoya ulaşabilirsiniz.</p>
+        <p class="idd-cal" style="margin-top: 5px;">16 Oca 2024</p>
+      </div>
+      <div class="id", onclick="window.location='https://www.youtube.com/watch?v=s8ONC87ZrRw';">
+        <p class="idd-title"><i class="fa-brands fa-youtube" style="color: red;"></i> | Gün 1 Bölüm 2 - Python ile Makine Öğrenmesi</p>
+        <p class="idd-des">Buraya tıklayarak videoya ulaşabilirsiniz.</p>
+        <p class="idd-cal" style="margin-top: 5px;">25 Şub 2024</p>
+      </div>
+      <div class="id", onclick="window.location='https://huggingface.co/cicekliai';">
+        <p class="idd-title"><i class="fa-solid fa-file-lines" style="color: rgb(0, 102, 255); min-height: 50px;"></i> | Hugging Face Veriseti</p>
+        <p class="idd-des">Buraya tıklayarak verisetine ulaşabilirsiniz.</p>
+        <p class="idd-cal" style="margin-top: 5px;">7 Mar 2024</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* RESPONSIVE */
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+    /* SLIDE SHOW */
+    function nextDiv1(){
+      const divs = document.querySelector('.wrap-1')
+      divs.style.display = 'none'
+      const anotherdiv = document.querySelector('.wrap-2')
+      anotherdiv.style.display = 'inline-block'
+    }
+    function previousDiv1(){
+      const divs = document.querySelector('.wrap-2')
+      divs.style.display = 'inline-block'
+      const anotherdiv = document.querySelector('.wrap-1')
+      anotherdiv.style.display = 'none'
+    }
+    function nextDiv2(){
+      const divs = document.querySelector('.wrap-2')
+      divs.style.display = 'none'
+      const anotherdiv = document.querySelector('.wrap-1')
+      anotherdiv.style.display = 'inline-block'
+    }
+    function previousDiv2(){
+      const divs = document.querySelector('.wrap-1')
+      divs.style.display = 'inline-block'
+      const anotherdiv = document.querySelector('.wrap-2')
+      anotherdiv.style.display = 'none'
+    }
+  </script>
+</body>
+</html>
